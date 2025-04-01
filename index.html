@@ -1,1 +1,85 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HumorIA Educativa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .scroll-container { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; }
+        .scroll-container > div { scroll-snap-align: start; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- Encabezado amarillo amplio con logo y menú -->
+<header class="bg-[#F5C543] py-6 px-8 flex items-center justify-between">
+    <div class="flex items-center space-x-4">
+        <img src="https://github.com/ProfeHumoris/HumorIA-Educativa/blob/main/imagenes/logo%20sin%20texto.png?raw=true" alt="Logo" class="h-16 w-16 rounded-full">
+        <h1 class="text-3xl font-bold">HumorIA Educativa</h1>
+    </div>
+    <nav class="flex items-center space-x-6">
+        <a href="#comunidad" class="text-lg font-semibold">Comunidad</a>
+        <a href="#musica" class="text-lg font-semibold">Música</a>
+        <a href="https://www.instagram.com/educ_humoris">
+            <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram" class="h-6">
+        </a>
+        <a href="mailto:profeshumoriscausa@outlook.com">
+            <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Correo" class="h-6">
+        </a>
+    </nav>
+</header>
+
+<!-- Carrusel dinámico -->
+<div class="relative overflow-hidden py-10">
+    <div class="scroll-container space-x-4 px-8">
+        <img src="https://github.com/ProfeHumoris/HumorIA-Educativa/blob/main/imagenes/4880320.jpg?raw=true" alt="Proyecto 1" class="rounded-lg w-full md:w-1/3 object-cover">
+        <img src="https://github.com/ProfeHumoris/HumorIA-Educativa/blob/main/imagenes/11514428.jpg?raw=true" alt="Proyecto 2" class="rounded-lg w-full md:w-1/3 object-cover">
+        <img src="https://github.com/ProfeHumoris/HumorIA-Educativa/blob/main/imagenes/profes%20y%20monojpeg.jpeg?raw=true" alt="Proyecto 3" class="rounded-lg w-full md:w-1/3 object-cover">
+    </div>
+</div>
+
+<!-- Bloques desplazables horizontales -->
+<section class="py-16">
+    <div class="scroll-container space-x-8 px-8">
+        <!-- Bloque Azul -->
+        <div class="min-w-[300px] bg-[#4A90E2] text-white p-8 rounded-lg flex flex-col items-center">
+            <h2 class="text-2xl font-bold mb-4">Coaching IA</h2>
+            <img src="https://github.com/ProfeHumoris/HumorIA-Educativa/blob/main/imagenes/4880320.jpg?raw=true" alt="Coaching" class="h-40 w-40 rounded-full mb-4">
+            <p class="text-center">Consejos prácticos y divertidos para la gestión de conflictos.</p>
+        </div>
+        <!-- Bloque Amarillo -->
+        <div class="min-w-[300px] bg-[#F5C543] text-gray-800 p-8 rounded-lg flex flex-col items-center">
+            <h2 class="text-2xl font-bold mb-4">Playlist Inteligentes</h2>
+            <img src="https://github.com/ProfeHumoris/HumorIA-Educativa/blob/main/imagenes/11514428.jpg?raw=true" alt="Playlist" class="h-40 w-40 rounded-full mb-4">
+            <p class="text-center">Música adaptada automáticamente al estado emocional.</p>
+        </div>
+        <!-- Bloque Rosa con GIF -->
+        <div class="min-w-[300px] bg-[#FFC2D1] text-gray-800 p-8 rounded-lg flex flex-col items-center">
+            <h2 class="text-2xl font-bold mb-4">Insights Humorísticos</h2>
+            <img src="https://media.giphy.com/media/l0HUpt2s9Pclgt9Vm/giphy.gif" alt="Insights" class="h-40 w-40 rounded-full mb-4">
+            <p class="text-center">Análisis divertidos para mejorar la comunicación.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Formulario de contacto -->
+<section id="contact" class="py-16 max-w-xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-8 text-center text-[#4A90E2]">Contáctanos</h2>
+    <form action="https://formsubmit.co/profeshumoriscausa@outlook.com" method="POST" class="space-y-4">
+        <input type="text" name="nombre" placeholder="Tu nombre" required class="w-full p-3 border rounded-lg">
+        <input type="email" name="email" placeholder="Tu email" required class="w-full p-3 border rounded-lg">
+        <textarea name="mensaje" placeholder="Tu mensaje" required class="w-full p-3 border rounded-lg"></textarea>
+        <button type="submit" class="bg-[#4A90E2] text-white font-semibold px-6 py-3 rounded-full w-full">Enviar</button>
+    </form>
+</section>
+
+<footer class="text-center py-8 text-gray-600">
+    <p>&copy; 2024 HumorIA Educativa</p>
+</footer>
+
+</body>
+</html>
